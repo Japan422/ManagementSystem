@@ -11,6 +11,8 @@
 |
 */
 
+// haruto
+
 Route::get('test','User\TopController@index');
 
 Route::get('top_page','User\TopController@topPage')->name('user.TopPage');
@@ -24,3 +26,6 @@ Route::get('userlogin_page','User\TopController@userLoginPage')->name('user.user
 Route::get('test',function(){
     return 123456;
 });
+
+
+// ryu
