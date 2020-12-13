@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Example\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Company;
+
 class TopController extends Controller
 {
     public function topPage()
@@ -19,7 +21,17 @@ class TopController extends Controller
 
     public function registrationPagePost(Request $request)
     {
-        dd($request->all());
+        
+        Company::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+            'department_name' => $request->department_name,
+            'address' => $request->address,
+            'tel' => $request->tel,
+        ]);
+
+        return back();
     }
 
     public function userRegisterPage()

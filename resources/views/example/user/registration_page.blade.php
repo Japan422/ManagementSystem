@@ -53,7 +53,7 @@
                                             <div class="form-row">
                                                 <div class="col-md-4 mb-3">
                                                     <label for="validationCustom01">会社名を登録</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" name="company_name" placeholder="会社名" required>
+                                                    <input type="text" class="form-control" id="validationCustom01" name="name" placeholder="会社名" required>
                                                     <div class="invalid-feedback">
                                                       会社名を入力してください
                                                     </div>
@@ -87,7 +87,7 @@
                                               </div>
                                               <div class="col-md-4 mb-3">
                                                 <label for="inputAddress">会社の住所</label>
-                                                <input type="text" class="form-control" id="inputAddress" name="company_address" placeholder="住所">
+                                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="住所">
                                                 <div class="invalid-feedback">
                                                   住所を記入してください
                                                 </div>
