@@ -18,6 +18,7 @@ Route::get('test','User\TopController@index');
 Route::get('top_page','User\TopController@topPage')->name('user.TopPage');
 
 Route::get('registration_page','User\TopController@registrationPage')->name('user.registrationPage');
+Route::post('registration_page','User\TopController@registrationPagePost');
 
 Route::get('userregister_page','User\TopController@userregisterPage')->name('user.userregisterPage');
 
