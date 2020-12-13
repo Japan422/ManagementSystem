@@ -21,6 +21,7 @@ class TopController extends Controller
 
     public function registrationPagePost(Request $request)
     {
+        
         Company::create([
             'name' => $request->name,
             'email' => $request->email,
