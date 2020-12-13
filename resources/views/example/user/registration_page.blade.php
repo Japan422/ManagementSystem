@@ -48,25 +48,26 @@
                             <div class="col-lg-12">
                                 <div class="au-card m-b-30">
                                     <div class="au-card-inner">
-                                        <form class="needs-validation" novalidate>
+                                        <form class="needs-validation" method="POST" novalidate>
+                                            @csrf
                                             <div class="form-row">
                                                 <div class="col-md-4 mb-3">
                                                     <label for="validationCustom01">会社名を登録</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="会社名" required>
+                                                    <input type="text" class="form-control" id="validationCustom01" name="company_name" placeholder="会社名" required>
                                                     <div class="invalid-feedback">
                                                       会社名を入力してください
                                                     </div>
                                                   </div>
                                                   <div class="col-md-4 mb-1">
                                                     <label for="validationCustom02">メールアドレスを登録</label>
-                                                    <input type="email" class="form-control" id="validationCustom02" placeholder="メールアドレス" required>
+                                                    <input type="email" class="form-control" id="validationCustom02" name="email" placeholder="メールアドレス" required>
                                                     <div class="invalid-feedback">
                                                       メールアドレスを入力してください
                                                     </div>
                                                   </div>
                                               <div class="col-md-4 mb-3">
                                                     <label for="inputPassword4">パスワード</label>
-                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="パスワード" required>
+                                                    <input type="password" class="form-control" id="inputPassword4" name="password" placeholder="パスワード" required>
                                                 <div class="invalid-feedback">
                                                     パスワードを入力してください
                                                 </div>
@@ -76,8 +77,8 @@
                                               <div class="col-md-4 mb-3">
                                                 <label for="validationCustom04">会社にある部署名を登録</label>
                                                 <div class="input_plural">
-                                                    <input type="text" class="form-control"　id="validationCustom04" placeholder="営業" required>
-                                                    <div class="invalid-feedback">
+                                                    <input type="text" class="form-control" id="validationCustom04" name="department_name" placeholder="営業" required>
+                                                      <div class="invalid-feedback">
                                                         記入してください
                                                       </div>
                                                     <input type="button" value="＋" class="add pluralBtn">
@@ -86,7 +87,7 @@
                                               </div>
                                               <div class="col-md-4 mb-3">
                                                 <label for="inputAddress">会社の住所</label>
-                                                <input type="text" class="form-control" id="inputAddress" placeholder="住所">
+                                                <input type="text" class="form-control" id="inputAddress" name="company_address" placeholder="住所">
                                                 <div class="invalid-feedback">
                                                   住所を記入してください
                                                 </div>
@@ -94,13 +95,13 @@
                                               <div class="col-md-4 mb-3">
                                                 <label for="validationCustom05">電話番号</label>
                                                 <div class="col-10">
-                                                  <input class="form-control" type="tel" value="000-0000-0000" id="example-tel-input">
+                                                  <input class="form-control" type="tel" value="000-0000-0000" name="tel" id="example-tel-input">
                                                 </div>
                                               </div>
                                             </div>
                                             <div class="form-group">
                                               <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                <input class="form-check-input" type="checkbox" value="" name="reconfirmation" id="invalidCheck" required>
                                                 <label class="form-check-label" for="invalidCheck">
                                                   再確認
                                                 </label>

@@ -29,6 +29,7 @@ Route::prefix('example')->group(function () {
     Route::get('top_page','Example\User\TopController@topPage');
 
     Route::get('registration_page','Example\User\TopController@registrationPage');
+    Route::post('registration_page','Example\User\TopController@registrationPagePost');
 
     Route::get('userregister_page','Example\User\TopController@userRegisterPage');
 

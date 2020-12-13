@@ -17,6 +17,11 @@ class TopController extends Controller
         return view('example.user.registration_page');
     }
 
+    public function registrationPagePost(Request $request)
+    {
+        dd($request->all());
+    }
+
     public function userRegisterPage()
     {
         return view('example.user.userregister_page');
