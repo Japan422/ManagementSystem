@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 class CreateCompaniesTable extends Migration
 {
     /**
@@ -15,6 +16,12 @@ class CreateCompaniesTable extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('email');
+            $table->string('password');
+            $table->string('department_name');
+            $table->string('address');
+            $table->string('tel');
             $table->timestamps();
         });
     }
