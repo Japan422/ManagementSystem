@@ -38,7 +38,6 @@
 <link rel="stylesheet" href="{{ asset('library/CoolAdmin-master/css/input_plural.css')}}">
 
 </head>
-
 <body class="animsition">
     <div class="page-wrapper">
             <!-- MAIN CONTENT-->

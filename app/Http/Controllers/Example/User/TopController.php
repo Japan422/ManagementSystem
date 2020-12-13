@@ -9,7 +9,21 @@ class TopController extends Controller
 {
     public function topPage()
     {
-        return view('user.top_page');
+        return view('example.user.top_page');
     }
 
+    public function registrationPage()
+    {
+        return view('example.user.registration_page');
+    }
+
+    public function userRegisterPage()
+    {
+        return view('example.user.userregister_page');
+    }
+
+    public function userLoginPage()
+    {
+        return view('example.user.userlogin_page');
+    }
 }

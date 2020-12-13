@@ -23,15 +23,14 @@ Route::get('userregister_page','User\TopController@userregisterPage')->name('use
 
 Route::get('userlogin_page','User\TopController@userLoginPage')->name('user.userloginPage');
 
-Route::get('test',function(){
-    return 123456;
-});
-
-
 // ryu
 
 Route::prefix('example')->group(function () {
     Route::get('top_page','Example\User\TopController@topPage');
 
-    
+    Route::get('registration_page','Example\User\TopController@registrationPage');
+
+    Route::get('userregister_page','Example\User\TopController@userRegisterPage');
+
+    Route::get('userlogin_page','Example\User\TopController@userLoginPage');
 });
