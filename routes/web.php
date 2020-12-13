@@ -20,3 +20,7 @@ Route::get('registration_page','User\TopController@registrationPage')->name('use
 Route::get('userregister_page','User\TopController@userregisterPage')->name('user.userregisterPage');
 
 Route::get('userlogin_page','User\TopController@userLoginPage')->name('user.userloginPage');
+
+Route::get('test',function(){
+    return 123456;
+});
