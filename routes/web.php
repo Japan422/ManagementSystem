@@ -29,3 +29,9 @@ Route::get('test',function(){
 
 
 // ryu
+
+Route::prefix('example')->group(function () {
+    Route::get('top_page','Example\User\TopController@topPage');
+
+    
+});

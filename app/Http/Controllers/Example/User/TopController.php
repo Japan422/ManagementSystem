@@ -7,5 +7,9 @@ use Illuminate\Http\Request;
 
 class TopController extends Controller
 {
-    //
+    public function topPage()
+    {
+        return view('user.top_page');
+    }
+
 }
